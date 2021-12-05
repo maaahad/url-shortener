@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { getJSON } from "../../../lib/getJSON";
 import styles from "../../../styles/shorterner/components/Form.module.sass";
 
 function validURL(str) {

@@ -21,7 +21,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <p>
-          Made with <BiHeart /> by{" "}
+          Made with <BiHeart /> by
           <a
             href="https://www.linkedin.com/in/muhammed-ahad-ba625986/"
             target="_blank"

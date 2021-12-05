@@ -16,13 +16,6 @@ describe("Request Handlers Test", () => {
     expect(tinyurlObject.originalUrl).toBe(originalUrl);
   });
 
-  // test("GET /:slug", async () => {
-  //   await fetch(baseUrl + `/${tinyurlObject._id}`)
-  //           .then(console.log)
-  //           .catch(console.error);
-  //   // console.log("GET /:slug", res);
-  // });
-
   test("POST /api/tinyurls/all", async () => {
     const tinyurlObjects = await _fetch("get", baseUrl + `/api/tinyurls/all`);
     expect(tinyurlObjects.length).not.toBe(0);

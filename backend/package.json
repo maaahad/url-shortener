@@ -24,6 +24,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "artillery": "^2.0.0-7",
     "eslint": "^8.4.0",
     "isomorphic-fetch": "^3.0.0",
     "jest": "^27.3.1",

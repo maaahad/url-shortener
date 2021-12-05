@@ -31,7 +31,7 @@ db.once("open", () => {
 module.exports = {
   getAllTinyUrls: async () => await TinyUrl.find({}),
   shortenUrl: async (originalUrl) => {
-    const slug = await createSlug(originalUrl, 7);
+    const slug = await createSlug(originalUrl, 6);
     const tinyUrl = `${credentials.site.origin}/${slug}`;
     return await new TinyUrl({
       _id: slug,

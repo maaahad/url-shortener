@@ -26,23 +26,32 @@
         margin: 0
         @include theme.sub-title
 
+    & > * + *
+        margin-block-start: 10px
+
 .cardAction
     display: flex
-    flex-flow: row nowrap
-    align-items: center
+    flex-flow: column nowrap
+    align-items: flex-start
     justify-content: space-between
     & > * + *
-        margin-inline-start: 10px
+        margin-inline-start: 0
+        margin-block-start: 20px
+
     button
         @include theme.icon-text-button
+        width: 100%
     & > a
         @include theme.anchor
 
-@media screen and (min-width: 500px)
+@media screen and (min-width: 720px)
     .cardAction
+        display: flex
         flex-flow: row nowrap
         align-items: center
         justify-content: space-between
         & > * + *
-            margin-block-start: 0
-            margin-inline-start: 20px
+            margin-inline-start: 10px
+
+        button
+            width: auto

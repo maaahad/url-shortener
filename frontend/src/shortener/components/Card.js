@@ -42,7 +42,6 @@ export default function Card({ item, deleteItemFromShortenedList = (f) => f }) {
       <div className={styles.infoContainer}>
         <p>{item.originalUrl}</p>
         <div className={styles.cardAction}>
-          {/* in case of a here ... We better use original url */}
           <a href={item.tinyUrl} title="Visit" target="_blank">
             {item.tinyUrl}
           </a>

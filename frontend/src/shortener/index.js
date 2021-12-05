@@ -40,7 +40,6 @@ export default function Shortener() {
   };
 
   useEffect(() => {
-    console.log(`${process.env.NEXT_PUBLIC_BASE_API}/tinyurls/all`);
     getJSON("get", `${process.env.NEXT_PUBLIC_BASE_API}/tinyurls/all`)
       .then((json) => setShortenedList(json))
       .catch(console.error);
