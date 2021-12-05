@@ -1,0 +1,25 @@
+
+# common
+*/node_modules
+*/npm-debug.log*
+*/yarn-debug.log*
+*/yarn-error.log*
+*/.DS_Store
+*/*.pem
+
+# Frontend
+frontend/.env.local
+frontend/.env.*.local
+frontend/.vercel
+frontend/build
+frontend/.next/
+frontend/out/
+
+# Backend
+backend/coverage
+backend/access.log
+
+
+
+
+

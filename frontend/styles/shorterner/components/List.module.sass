@@ -1,0 +1,39 @@
+@use "../../theme"
+
+// .listContainer
+
+.listHeader
+    display: flex
+    flex-flow: row nowrap
+    align-content: center
+    justify-content: space-between
+    h2
+        @include theme.title
+        margin: 0
+        margin-block-end: 10px
+        display: flex
+        align-items: center
+        justify-content: center
+        & > svg
+            width: 20px
+            height: 20px
+            color: theme.$signature-color
+
+        & > span
+            text-transform: capitalize
+            margin-inline-start: 5px
+
+    button
+        @include theme.text-button
+        background-color: theme.$bg-color-warning
+
+        &:hover
+            background-color: theme.$bg-color-warning-hover
+
+.list
+    @include theme.shadow
+    padding: 10px 20px
+    border-radius: 5px
+
+    & > * + *
+        border-block-start: 1px solid theme.$border-color-primary

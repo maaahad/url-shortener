@@ -1,0 +1,44 @@
+@use "./theme"
+
+.container
+  min-width: 720px
+
+.header
+  padding: 0 2rem
+  height: 60px
+  width: 100%
+  background-color: theme.$bg-color-secondary
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 10
+
+.main
+  min-height: 100vh
+  padding: 120px 4rem 4rem 4rem
+  max-width: 960px
+  margin: auto
+
+.footer
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 40px
+  padding: 2rem
+  background-color: theme.$bg-color-hover
+  & > p
+    @include theme.text-regular
+    font-weight: 200
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0
+
+    & > svg
+      margin: 0 5px
+      color: theme.$text-color-error
+
+    & > a
+      margin-inline-start: 5px
+      @include theme.anchor
+      color: inherit

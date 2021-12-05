@@ -1,0 +1,14 @@
+@use "../theme"
+
+.navContainer
+    height: 100%
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    justify-content: flex-start
+
+    & > h1
+        margin: 0
+        @include theme.title
+        color: theme.$text-color-primary
+        text-transform: capitalize

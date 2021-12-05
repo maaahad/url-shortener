@@ -1,0 +1,21 @@
+@use "../theme"
+
+.shortenerContainer
+    & > * + *
+        margin-block-start: 40px
+
+.feedback
+    position: fixed
+    top: 25px
+    left: 0px
+    right: 0px
+    border: 1px solid theme.$border-color-primary
+    padding: 5px
+    background-color: theme.$bg-color-secondary
+    color: theme.$bg-color-warning
+    & > p
+        @include theme.text-regular
+        margin: 0
+        text-align: center
+        color: inherit
+        font-weight: 400

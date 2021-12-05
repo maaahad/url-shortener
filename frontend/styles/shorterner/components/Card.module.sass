@@ -1,0 +1,48 @@
+@use "../../theme"
+
+.cardContainer
+    padding: 10px 0
+    display: flex
+    flex-flow: row nowrap
+    align-items: flex-start
+    justify-content: flex-start
+
+    & > * + *
+        margin-inline-start: 16px
+
+    & > button
+        align-self: center
+        @include theme.icon-only-button
+        & > svg
+            color: theme.$bg-color-warning
+        &:hover
+            background-color: theme.$bg-color-warning
+            & > svg
+                color: #ffffff
+
+.infoContainer
+    flex: 1
+    & > p
+        margin: 0
+        @include theme.sub-title
+
+.cardAction
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    justify-content: space-between
+    & > * + *
+        margin-inline-start: 10px
+    button
+        @include theme.icon-text-button
+    & > a
+        @include theme.anchor
+
+@media screen and (min-width: 500px)
+    .cardAction
+        flex-flow: row nowrap
+        align-items: center
+        justify-content: space-between
+        & > * + *
+            margin-block-start: 0
+            margin-inline-start: 20px
