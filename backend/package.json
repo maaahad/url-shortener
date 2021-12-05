@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint *.js lib",
+    "stress": "artillery run stress.yml",
     "dev": "NODE_ENV=development nodemon cluster.js"
   },
   "keywords": [

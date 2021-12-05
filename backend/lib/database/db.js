@@ -27,6 +27,12 @@ db.once("open", () => {
   console.log("Connection to MongoDB was successfull");
 });
 
+// every new run will clear all existing records for demonstration purpose
+TinyUrl.deleteMany({}, (error, count) => {
+  if (error) return console.error(error.message);
+  console.log(`${count.deletedCount} entries has been cleared from database`);
+});
+
 // exposing methods from db for CRUD operations
 module.exports = {
   getAllTinyUrls: async () => await TinyUrl.find({}),
