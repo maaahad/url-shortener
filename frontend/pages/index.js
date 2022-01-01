@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>PYGMY : URL Shortener</title>
+        <title>URL Shortener</title>
         <meta name="description" content="URL shortener using MERN stack" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
